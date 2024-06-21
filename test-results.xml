@@ -1,69 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="24" failures="2" errors="0" time="2.091">
-  <testsuite name="src/tests/ProductFilters.test.js" errors="0" failures="0" skipped="0" timestamp="2024-06-20T16:37:32" time="1.07" tests="4">
-    <testcase classname="ProductFilters component" name="should invoke the onPriceChange callback after &quot;minimum price&quot; input value changed" time="0.035">
+<testsuites name="jest tests" tests="24" failures="0" errors="0" time="3.492">
+  <testsuite name="src/tests/ProductTable.test.js" errors="0" failures="0" skipped="0" timestamp="2024-06-21T01:20:53" time="1.599" tests="4">
+    <testcase classname="ProductTable component" name="should display all product data when all columns are visible" time="0.065">
     </testcase>
-    <testcase classname="ProductFilters component" name="should invoke the onPriceChange callback after &quot;maximum price&quot; input value changed" time="0.005">
+    <testcase classname="ProductTable component" name="should display only chosen columns for a given product (scenario: COLUMNS-ALL, product: Beef - Tongue, Fresh)" time="0.019">
     </testcase>
-    <testcase classname="ProductFilters component" name="should display the &quot;minimum price&quot; in input according to passed props" time="0.004">
+    <testcase classname="ProductTable component" name="should display only chosen columns for a given product (scenario: COLUMNS-ALL-BUT-ID, product: Beef - Tongue, Fresh)" time="0.012">
     </testcase>
-    <testcase classname="ProductFilters component" name="should display the &quot;maximum price&quot; in input according to passed props" time="0.004">
-    </testcase>
-  </testsuite>
-  <testsuite name="src/tests/ProductTable.test.js" errors="0" failures="0" skipped="0" timestamp="2024-06-20T16:37:32" time="1.094" tests="4">
-    <testcase classname="ProductTable component" name="should display all product data when all columns are visible" time="0.024">
-    </testcase>
-    <testcase classname="ProductTable component" name="should display only chosen columns for a given product (scenario: COLUMNS-ALL, product: Beef - Tongue, Fresh)" time="0.022">
-    </testcase>
-    <testcase classname="ProductTable component" name="should display only chosen columns for a given product (scenario: COLUMNS-ALL-BUT-ID, product: Beef - Tongue, Fresh)" time="0.004">
-    </testcase>
-    <testcase classname="ProductTable component" name="should display only chosen columns for a given product (scenario: COLUMNS-ONLY-ID, product: Beef - Tongue, Fresh)" time="0.004">
+    <testcase classname="ProductTable component" name="should display only chosen columns for a given product (scenario: COLUMNS-ONLY-ID, product: Beef - Tongue, Fresh)" time="0.017">
     </testcase>
   </testsuite>
-  <testsuite name="src/tests/ColumnToggle.test.js" errors="0" failures="0" skipped="0" timestamp="2024-06-20T16:37:32" time="1.148" tests="6">
-    <testcase classname="ColumnToggle" name="should invoke the onToggle callback after &quot;id&quot; checkbox was clicked" time="0.042">
+  <testsuite name="src/tests/ColumnToggle.test.js" errors="0" failures="0" skipped="0" timestamp="2024-06-21T01:20:53" time="1.689" tests="6">
+    <testcase classname="ColumnToggle" name="should invoke the onToggle callback after &quot;id&quot; checkbox was clicked" time="0.08">
     </testcase>
-    <testcase classname="ColumnToggle" name="should invoke the onToggle callback after &quot;name&quot; checkbox was clicked" time="0.013">
+    <testcase classname="ColumnToggle" name="should invoke the onToggle callback after &quot;name&quot; checkbox was clicked" time="0.014">
     </testcase>
-    <testcase classname="ColumnToggle" name="should invoke the onToggle callback after &quot;department&quot; checkbox was clicked" time="0.017">
+    <testcase classname="ColumnToggle" name="should invoke the onToggle callback after &quot;department&quot; checkbox was clicked" time="0.012">
     </testcase>
-    <testcase classname="ColumnToggle" name="should invoke the onToggle callback after &quot;currency&quot; checkbox was clicked" time="0.008">
+    <testcase classname="ColumnToggle" name="should invoke the onToggle callback after &quot;currency&quot; checkbox was clicked" time="0.016">
     </testcase>
-    <testcase classname="ColumnToggle" name="should invoke the onToggle callback after &quot;price&quot; checkbox was clicked" time="0.004">
+    <testcase classname="ColumnToggle" name="should invoke the onToggle callback after &quot;price&quot; checkbox was clicked" time="0.015">
     </testcase>
-    <testcase classname="ColumnToggle" name="should display (un)checked column checkboxes after initial render" time="0.029">
+    <testcase classname="ColumnToggle" name="should display (un)checked column checkboxes after initial render" time="0.098">
     </testcase>
   </testsuite>
-  <testsuite name="src/tests/ProductSearch.test.js" errors="0" failures="2" skipped="0" timestamp="2024-06-20T16:37:32" time="1.361" tests="10">
-    <testcase classname="ProductSearch component" name="should display all products if no filters are applied" time="0.086">
+  <testsuite name="src/tests/ProductFilters.test.js" errors="0" failures="0" skipped="0" timestamp="2024-06-21T01:20:53" time="1.693" tests="4">
+    <testcase classname="ProductFilters component" name="should invoke the onPriceChange callback after &quot;minimum price&quot; input value changed" time="0.069">
     </testcase>
-    <testcase classname="ProductSearch component" name="should display label including number of items" time="0.018">
+    <testcase classname="ProductFilters component" name="should invoke the onPriceChange callback after &quot;maximum price&quot; input value changed" time="0.02">
     </testcase>
-    <testcase classname="ProductSearch component" name="should display product row cells" time="0.029">
+    <testcase classname="ProductFilters component" name="should display the &quot;minimum price&quot; in input according to passed props" time="0.028">
     </testcase>
-    <testcase classname="ProductSearch component" name="should display all columns by default" time="0.017">
+    <testcase classname="ProductFilters component" name="should display the &quot;maximum price&quot; in input according to passed props" time="0.005">
     </testcase>
-    <testcase classname="ProductSearch component" name="should display 14 products after filtering price between 5 and 100 (correct)" time="0.038">
+  </testsuite>
+  <testsuite name="src/tests/ProductSearch.test.js" errors="0" failures="0" skipped="0" timestamp="2024-06-21T01:20:53" time="2.528" tests="10">
+    <testcase classname="ProductSearch component" name="should display all products if no filters are applied" time="0.081">
     </testcase>
-    <testcase classname="ProductSearch component" name="should display 8 products after filtering price between 10 and 1000 (correct)" time="0.022">
+    <testcase classname="ProductSearch component" name="should display label including number of items" time="0.035">
     </testcase>
-    <testcase classname="ProductSearch component" name="should display 1 products after filtering price between 7.75 and 7.75 (correct)" time="0.027">
+    <testcase classname="ProductSearch component" name="should display product row cells" time="0.027">
     </testcase>
-    <testcase classname="ProductSearch component" name="should display 22 products after filtering price between 0 and 10 (correct (partial filter))" time="0.016">
-      <failure>Error: expect(received).toBe(expected) // Object.is equality
-
-Expected: 22
-Received: 30
-    at /Users/astroxjrk/Downloads/Project-developer/Gosoft-interview/src/tests/ProductSearch.test.js:55:41</failure>
+    <testcase classname="ProductSearch component" name="should display all columns by default" time="0.032">
     </testcase>
-    <testcase classname="ProductSearch component" name="should display 8 products after filtering price between 10 and 0 (correct (partial filter))" time="0.016">
-      <failure>Error: expect(received).toBe(expected) // Object.is equality
-
-Expected: 8
-Received: 30
-    at /Users/astroxjrk/Downloads/Project-developer/Gosoft-interview/src/tests/ProductSearch.test.js:55:41</failure>
+    <testcase classname="ProductSearch component" name="should display 14 products after filtering price between 5 and 100 (correct)" time="0.067">
     </testcase>
-    <testcase classname="ProductSearch component" name="should display 30 products after filtering price between 0 and 0 (correct (partial filter))" time="0.017">
+    <testcase classname="ProductSearch component" name="should display 8 products after filtering price between 10 and 1000 (correct)" time="0.051">
+    </testcase>
+    <testcase classname="ProductSearch component" name="should display 1 products after filtering price between 7.75 and 7.75 (correct)" time="0.051">
+    </testcase>
+    <testcase classname="ProductSearch component" name="should display 22 products after filtering price between 0 and 10 (correct (partial filter))" time="0.033">
+    </testcase>
+    <testcase classname="ProductSearch component" name="should display 8 products after filtering price between 10 and 0 (correct (partial filter))" time="0.039">
+    </testcase>
+    <testcase classname="ProductSearch component" name="should display 30 products after filtering price between 0 and 0 (correct (partial filter))" time="0.022">
     </testcase>
   </testsuite>
 </testsuites>

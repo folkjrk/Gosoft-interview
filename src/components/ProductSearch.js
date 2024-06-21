@@ -46,16 +46,26 @@ export const ProductSearch = (props) => {
 
 
      // TODO: implement handler for filtering products by price range
-    if (!isNaN(min) && !isNaN(max)) {
  
-      
+    if (!isNaN(min) && !isNaN(max)) {
       const filtered = products.filter(product =>
         product.price >= min && product.price <= max
+      );
+      setFilteredItems(filtered);
+    } else if (!isNaN(min)) {
+      const filtered = products.filter(product =>
+        product.price >= min
+      );
+      setFilteredItems(filtered);
+    } else if (!isNaN(max)) {
+      const filtered = products.filter(product =>
+        product.price <= max
       );
       setFilteredItems(filtered);
     } else {
       setFilteredItems(products);
     }
+
   }, [price, products]);
 
   useEffect(() => {
